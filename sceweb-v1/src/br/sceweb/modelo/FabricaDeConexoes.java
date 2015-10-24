@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class FabricaDeConexoes {
-	public Connection getConection(){
+	public Connection getConnection(){
 		String url = "jdbc:mysql://localhost/sceweb";
 		try {
 			return DriverManager.getConnection(url, "root", "aluno");

@@ -12,6 +12,7 @@ import br.sceweb.modelo.EmpresaDAO;
 public class UC01CadastrarEmpresa {
 	static EmpresaDAO empresaDAO;
 	static Empresa empresa;
+	static Empresa empresa02;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -22,6 +23,7 @@ public class UC01CadastrarEmpresa {
 		empresa.setNomeFantasia("empresa x");
 		empresa.setEndereco("rua taquari");
 		empresa.setTelefone("2222");
+		
 	}
 
 	@AfterClass
