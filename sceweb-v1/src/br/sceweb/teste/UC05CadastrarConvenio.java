@@ -7,10 +7,12 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import br.sceweb.modelo.Convenio;
+import br.sceweb.modelo.ConvenioDAO;
 
 public class UC05CadastrarConvenio {
 	static Convenio convenio;
 	static String dataInicio;
+	static ConvenioDAO convenioDAO;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -43,6 +45,14 @@ public class UC05CadastrarConvenio {
 		convenio.setDataInicio("242/10/2015");
 	}
 
+	@Test  
+	public void CT05UC05CadastrarConvenio_com_sucesso() 
+	{   
+		//convenioDAO.adiciona(convenio);
+		//assertTrue (convenio.equals(convenioDAO.adiciona(convenio)));
+		//convenioDAO.exclui(convenio.getCnpj());
+	}
+	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}

@@ -56,8 +56,8 @@ public class Convenio {
 		logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>data inicio = " + dataInicio);
 		if (validaData(dataInicio)){
 			this.dataInicio = new DateTime(Integer.parseInt(dataInicio.substring(6, 10)),
-									Integer.parseInt(dataInicio.substring(3, 5)),
-									Integer.parseInt(dataInicio.substring(0, 2)), 0, 0);
+									       Integer.parseInt(dataInicio.substring(3, 5)),
+									       Integer.parseInt(dataInicio.substring(0, 2)), 0, 0);
 		}
 		else{
 			throw new IllegalArgumentException("data invalida");
